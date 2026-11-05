@@ -2,9 +2,9 @@
 
 # Mouad Chaouni
 
-### Software Engineering · DevOps · Cloud
+### DevOps & Cloud Engineer · AWS · Kubernetes · Terraform
 
-**I build software and the systems that ship, secure, and operate it.**
+**Automating infrastructure. Securing delivery. Operating reliable cloud systems.**
 
 Final-year Engineering Student @ INPT · AWS Certified Solutions Architect – Associate
 
@@ -14,57 +14,41 @@ Final-year Engineering Student @ INPT · AWS Certified Solutions Architect – A
 
 ---
 
-## 👨‍💻 About Me
+## ☁️ About Me
 
-I'm a final-year engineering student at **INPT** working at the intersection of **software engineering, DevOps, and cloud infrastructure**.
+I'm a final-year engineering student at **INPT** focused on **DevOps, Cloud Engineering, DevSecOps, and platform automation**.
 
-I enjoy going beyond writing application code: designing APIs and distributed systems, containerizing workloads, automating infrastructure, building CI/CD pipelines, securing delivery workflows, and making systems observable.
+I work across the software delivery lifecycle: provisioning cloud infrastructure with **Terraform**, containerizing workloads with **Docker**, orchestrating applications with **Kubernetes**, building secure **CI/CD and GitOps pipelines**, and implementing monitoring and observability.
 
-My recent work has involved **Java/Spring Boot, React, AWS, Terraform, Docker, Kubernetes, GitOps, CI/CD, identity and access management, and observability**.
+My recent work includes **AWS infrastructure, Kubernetes platforms, GitHub Actions and GitLab CI/CD, Argo CD, Terraform, security automation, Keycloak/OIDC, Prometheus, Grafana, Loki, and CloudWatch**.
 
-Currently focused on becoming a stronger **DevOps & Cloud Engineer with solid software-engineering depth**.
-
----
-
-# 🚀 Featured Engineering Work
-
-## 🏥 MedCore
-
-**Full-stack clinic management platform built around Spring Boot microservices and a React application.**
-
-- Multi-service backend architecture with Spring Boot
-- React-based multi-role interface
-- Authentication and authorization through Keycloak and OpenID Connect
-- Role and identity information enforced within backend services
-- Dockerized development environment
-- Hosted fictional-data demonstration and complete walkthrough
-
-**Engineering focus:** distributed backend design · identity · API security · full-stack integration
-
-`Java` `Spring Boot` `React` `Keycloak` `OIDC` `PostgreSQL` `Docker`
-
-→ Explore MedCore  
-→ Live Demo  
-→ Watch the Walkthrough
+I also have a strong backend engineering foundation with **Java and Spring Boot**, which helps me understand the applications and distributed systems running on the platforms I build.
 
 ---
+
+# 🚀 Featured DevOps & Cloud Projects
 
 ## ☁️ CloudForge
 
-**An AWS infrastructure and DevOps project built to provision, secure, deploy, observe, test, and recover a cloud workload.**
+**End-to-end AWS infrastructure and DevOps project designed to provision, secure, deploy, observe, test, and recover a cloud workload.**
 
-- AWS infrastructure provisioned using modular Terraform
-- Multi-AZ networking with ALB, WAF, EC2, RDS, Redis and S3
-- GitHub Actions authentication through AWS OIDC instead of static cloud credentials
-- Infrastructure and application CI/CD workflows
-- CloudWatch observability, alarms and operational monitoring
-- Automated drift detection
-- RDS point-in-time recovery exercises
-- k6 load validation reaching approximately **224 requests/s with p95 ≈ 51 ms and zero HTTP failures during the recorded run**
+- Infrastructure as Code with modular **Terraform**
+- AWS networking across multiple Availability Zones
+- EC2 Auto Scaling, ALB, WAF, RDS, Redis and S3
+- GitHub Actions using **AWS OIDC and short-lived credentials**
+- Automated infrastructure and application delivery
+- CloudWatch dashboards, alarms and operational monitoring
+- Automated infrastructure drift detection
+- RDS backup and point-in-time recovery validation
+- Infrastructure security checks with Checkov
+- Load validation with k6
+- Recorded test: approximately **224 requests/s**, **p95 ≈ 51 ms**, with **0 HTTP failures across 268,940 requests**
 
-**Engineering focus:** Infrastructure as Code · AWS architecture · CI/CD · reliability · observability
+**Engineering focus:**  
+`AWS Architecture` · `Infrastructure as Code` · `CI/CD` · `Cloud Security` · `Observability` · `Reliability`
 
-`AWS` `Terraform` `GitHub Actions` `OIDC` `CloudWatch` `Go` `k6`
+**Stack:**  
+`AWS` `Terraform` `GitHub Actions` `OIDC` `CloudWatch` `Checkov` `Go` `k6`
 
 → Explore CloudForge
 
@@ -72,135 +56,261 @@ Currently focused on becoming a stronger **DevOps & Cloud Engineer with solid so
 
 ## 🔐 Pitstop
 
-**An end-to-end DevSecOps platform built around a microservices application.**
+**End-to-end Kubernetes and DevSecOps platform built around a microservices workload.**
 
-The application serves as the workload; the main engineering work is the platform surrounding it.
+The application is the workload. The main engineering contribution is the platform surrounding it.
 
-- GitLab CI/CD pipelines for multiple services
+### Delivery architecture
+
+`Source Code → GitLab CI → Container Registry → GitOps → Argo CD → Kubernetes → Observability`
+
+### Platform engineering
+
+- Shared **GitLab CI/CD** pipelines across multiple services
 - Immutable container images tagged by commit SHA
-- GitOps delivery through Argo CD
-- Kubernetes orchestration
+- GitOps-based deployments using **Argo CD**
 - Automated reconciliation, pruning and self-healing
-- Security controls including Gitleaks, SonarQube, Trivy and OWASP ZAP
-- Istio mTLS and service authorization policies
-- Prometheus, Grafana, Loki and Alertmanager observability
-- Optional AWS EKS deployment using Terraform
+- Kubernetes workload orchestration
+- AWS EKS infrastructure provisioned using Terraform
+- Istio service mesh with **mTLS**
+- Kubernetes authorization controls
+- Sealed Secrets for sensitive configuration
+- DevSecOps scanning with:
+  - Trivy
+  - Gitleaks
+  - SonarQube
+  - OWASP ZAP
+- Observability with:
+  - Prometheus
+  - Grafana
+  - Loki
+  - Alertmanager
 
-**Delivery path**
+**Engineering focus:**  
+`Kubernetes` · `GitOps` · `DevSecOps` · `Platform Engineering` · `Cloud Infrastructure` · `Observability`
 
-`Code → GitLab CI → Container Registry → GitOps → Argo CD → Kubernetes → Observability`
-
-**Engineering focus:** DevSecOps · Kubernetes · GitOps · platform security · observability
-
-`Kubernetes` `GitLab CI/CD` `Argo CD` `Istio` `Terraform` `Prometheus` `Grafana` `Loki`
+**Stack:**  
+`Kubernetes` `GitLab CI/CD` `Argo CD` `Terraform` `AWS EKS` `Istio` `Trivy` `Prometheus` `Grafana` `Loki`
 
 → Explore Pitstop
 
 ---
 
-# 🧩 More Projects
+## 🧱 terraform-aws-cache
 
-### 🏠 Dari
-Moroccan colocation marketplace combining a **Spring Boot API, PostgreSQL/PostGIS, Next.js web application and an Expo/React Native mobile client**.
+**Reusable Terraform module for deploying a secure Amazon ElastiCache Redis layer on AWS.**
 
-### 🧱 terraform-aws-cache
-Reusable Terraform module for deploying an **encrypted Amazon ElastiCache Redis cache**, including validation, examples and Terraform tests.
+- Reusable Terraform module architecture
+- Encryption at rest and in transit
+- Redis authentication through AWS Secrets Manager
+- Network access controlled through security groups
+- Optional private Route 53 DNS
+- Input validation
+- Runnable examples
+- Automated `terraform test` coverage
 
-### 🤖 HealOps
-Infrastructure operations prototype combining a **Spring Boot AI agent with Docker, Prometheus, Kubernetes, OpenStack and distributed tracing integrations**.
+**Engineering focus:**  
+`Terraform Module Design` · `AWS` · `Cloud Security` · `Reusable Infrastructure`
+
+**Stack:**  
+`Terraform` `AWS` `ElastiCache` `Secrets Manager` `Route 53`
+
+→ Explore terraform-aws-cache
 
 ---
 
-# 🛠️ Engineering Stack
+# ⚙️ Platform & Operations Projects
 
-### Software Engineering
+## 🤖 HealOps
 
-Java · Spring Boot · Spring Cloud · REST APIs · React · TypeScript · Next.js · Node.js · NestJS · Python
+**Infrastructure operations and observability assistant integrating multiple infrastructure platforms.**
 
-### Cloud & Infrastructure
+The platform connects a Spring Boot agent with specialized services for:
 
-AWS · Terraform · Ansible · Linux · Networking · Oracle Cloud
+- Docker operations
+- Kubernetes workloads
+- Prometheus monitoring
+- OpenStack
+- Distributed tracing
+- Infrastructure troubleshooting
 
-### Containers & Delivery
+**Engineering focus:**  
+`Infrastructure Automation` · `Monitoring` · `Containers` · `Operations`
 
-Docker · Kubernetes · GitHub Actions · GitLab CI/CD · Argo CD · GitOps
+`Docker` `Kubernetes` `Prometheus` `OpenStack` `FastAPI` `Spring Boot`
 
-### Security & Identity
+→ Explore HealOps
 
-Keycloak · OAuth2/OIDC · JWT · RBAC/ABAC · Istio · Trivy · Checkov · SonarQube
+---
 
-### Observability
+## 🏥 MedCore
+
+**Distributed clinic-management platform demonstrating the application layer behind modern infrastructure.**
+
+- Spring Boot microservices
+- API Gateway
+- React interface
+- PostgreSQL
+- Docker
+- Keycloak
+- OAuth2 / OpenID Connect
+- Authorization based on identity claims
+- Hosted fictional-data demonstration
+
+MedCore complements my DevOps profile by giving me hands-on understanding of the **distributed applications, APIs, identity systems and containers that infrastructure platforms must operate**.
+
+**Engineering focus:**  
+`Microservices` · `Identity` · `Containers` · `Distributed Systems`
+
+`Java` `Spring Boot` `React` `Keycloak` `PostgreSQL` `Docker`
+
+→ Explore MedCore  
+→ Live Demo  
+→ Watch the Walkthrough
+
+---
+
+## 🏠 Dari
+
+**Cloud-ready full-stack marketplace architecture built with Spring Boot, PostgreSQL/PostGIS and Next.js.**
+
+The project gives me additional experience working with the kinds of backend, database and web workloads that modern DevOps platforms need to deploy and operate.
+
+`Java` `Spring Boot` `PostgreSQL` `PostGIS` `Next.js` `Terraform`
+
+→ Explore Dari
+
+---
+
+# 🛠️ DevOps & Cloud Stack
+
+### ☁️ Cloud & Infrastructure
+
+AWS · Oracle Cloud · Terraform · Ansible · Linux · Networking
+
+### 📦 Containers & Orchestration
+
+Docker · Kubernetes · AWS EKS · Istio
+
+### 🔄 CI/CD & GitOps
+
+GitLab CI/CD · GitHub Actions · Argo CD · GitOps · Kaniko · Git
+
+### 🔐 DevSecOps & Identity
+
+Trivy · Checkov · SonarQube · Gitleaks · OWASP ZAP · Keycloak · OAuth2/OIDC · JWT · RBAC/ABAC
+
+### 📊 Observability & Reliability
 
 Prometheus · Grafana · Loki · Alertmanager · CloudWatch · k6
 
-### Data
+### 💻 Development Foundation
 
-PostgreSQL · PostGIS · MongoDB · Redis · MySQL
+Java · Spring Boot · Python · Bash · REST APIs · React · TypeScript · Node.js
+
+### 🗄️ Data
+
+PostgreSQL · Redis · MongoDB · MySQL · PostGIS
 
 ---
 
 # 💼 Experience
 
-### Backend & DevOps Engineering Intern · SYNERTIC
+## Backend & DevOps Engineering Intern · SYNERTIC
 **Casablanca, Morocco · Jun – Aug 2026**
 
-Worked on a multi-tenant SaaS authorization platform involving:
+Worked on a multi-tenant SaaS platform across backend engineering, infrastructure automation, security and observability.
 
-- Java 21 and Spring Boot backend engineering
-- Keycloak and Cerbos authorization with RBAC/ABAC
-- GitLab CI/CD automation
-- Kaniko container builds and Trivy security scanning
-- Oracle Cloud deployment and Ansible automation
-- Prometheus, Grafana and Loki observability
+- Automated **GitLab CI/CD** pipelines for build, security validation and deployment
+- Used **Kaniko** for container image builds
+- Integrated **Trivy** security scanning
+- Deployed workloads on **Oracle Cloud**
+- Automated infrastructure and server operations using **Ansible**
+- Implemented observability with **Prometheus, Grafana and Loki**
+- Developed Java/Spring Boot backend services
+- Integrated **Keycloak and Cerbos** for RBAC/ABAC authorization and tenant isolation
 
-### Full-Stack Developer Intern · French Startup
+---
+
+## Full-Stack Developer Intern · French Startup
 **Remote · Jul – Aug 2025**
 
-Developed campaign-management workflows and REST APIs using **NestJS, Prisma, MongoDB and JWT-based authentication**.
+Developed backend workflows and REST APIs using **NestJS, Prisma, MongoDB and JWT authentication**.
+
+This experience strengthened my understanding of application architecture, which I now apply when designing deployment and infrastructure platforms.
 
 ---
 
 # 🎓 Education
 
-**Institut National des Postes et Télécommunications — INPT**
+### Institut National des Postes et Télécommunications — INPT
 
-Engineering Degree · Ubiquitous & Distributed Systems  
+**Engineering Degree · Ubiquitous & Distributed Systems**  
+Cloud & Distributed Systems orientation
+
 2024 → 2027 · Rabat, Morocco
 
-**CPGE Ibn Timiya**
+### CPGE Ibn Timiya
 
-MPSI / MP · Mathematics & Physics  
+**MPSI / MP · Mathematics & Physics**
+
 2022 → 2024
 
 ---
 
-# 🏅 Certifications
+# 🏅 Cloud Certifications
 
-**AWS Certified Solutions Architect – Associate**  
+### AWS Certified Solutions Architect – Associate
 Issued October 2026
 
-**Oracle Cloud Infrastructure Foundations Associate**  
+### Oracle Cloud Infrastructure Foundations Associate
 Issued October 2025
 
 ---
 
-# 🎯 Currently
+# 🔭 Current Focus
 
-Deepening my expertise in:
+I'm currently strengthening my skills around:
 
-`Linux` · `AWS Architecture` · `Kubernetes` · `Terraform` · `GitOps` · `DevSecOps` · `Production Operations`
+`Linux Systems Administration`
 
-I'm currently looking for a **6-month PFE / final-year engineering internship starting January 2027**, particularly around:
+`AWS Architecture`
 
-**DevOps · Cloud Engineering · DevSecOps · Backend / Software Engineering**
+`Terraform & Infrastructure as Code`
+
+`Kubernetes`
+
+`GitOps`
+
+`Cloud Security`
+
+`DevSecOps`
+
+`Observability`
+
+`Production Operations`
+
+`Platform Engineering`
+
+---
+
+# 🎯 Looking for a PFE
+
+I'm looking for a **6-month final-year engineering internship starting January 2027**.
+
+My preferred areas are:
+
+**DevOps Engineering · Cloud Engineering · DevSecOps · Platform Engineering · Cloud Infrastructure**
+
+I'm also open to backend/software engineering opportunities involving significant **cloud, infrastructure, distributed systems, or DevOps responsibilities**.
 
 ---
 
 <div align="center">
 
-### 🤝 Let's Connect
+## 🤝 Let's Connect
 
-I'm interested in engineering teams working on cloud platforms, distributed systems, developer infrastructure and modern software delivery.
+Interested in cloud platforms, infrastructure automation, Kubernetes, DevSecOps and reliable software delivery.
 
 **LinkedIn · GitHub · Email**
 
